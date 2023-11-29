@@ -26,6 +26,7 @@ The device will also include emergency features to help the swimmer receive assi
 
 ### V3:
 - For open-water swimming, a sequence of preset GPS target locations are downloaded to the board, guiding the user around a course.
+- Solar panel for charging LiPo battery.
 
 ### V4:
 - A button or pull cord at the base of the board can be used to trigger "Emergency" mode, which activates the emergency light and speaker, as well as texting location updates to a designated recipient/emergency services.
