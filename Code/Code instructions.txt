@@ -1,0 +1,20 @@
+To set up the Swan in the Arduino IDE:
+===
+- Open the Arduino IDE.
+- Add the following URL to the Additional Boards URL in Preferences: https://github.com/stm32duino/BoardManagerFiles/raw/main/package_stmicroelectronics_index.json
+- Restart the IDE.
+
+
+To upload: 
+===
+- Connect the Blues Swan microcontroller to your PC via USB.
+- Open the script in the Arduino IDE.
+- Under Tools -> Board -> STM32 boards broup, select "Blues Wireless boards".
+- Under Tools -> Upload method, select "STM32CubeProgrammer (DFU)."
+- Press and hold the BOOT button on the Swan, press and release RESET, then release BOOT to cause the Swan to jump into its bootloader. 
+- This sequence must be done every time you want to upload firmware to the Swan.
+
+
+Dependencies:
+===
+- Optical Flow sensor: https://github.com/bitcraze/Bitcraze_PMW3901
