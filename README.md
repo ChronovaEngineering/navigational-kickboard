@@ -15,10 +15,18 @@ Mobile phones can track the user's location and provide feedback but can be diff
 
 The device will also include emergency features to help the swimmer receive assistance if they run into difficulties in the water.
 
-## Future features:
+## Planned features:
+### V1:
 - For lane swimming, visual flow sensors track if the swimmer is staying in a straight line.
-- For open-water swimming, a sequence of preset GPS target locations are downloaded to the board, guiding the user around a course.
-- A front-mounted proximity sensor to warn the user of oncoming obstacles.
 - Haptic motor and speaker fitted inside each handle grip give feedback on which direction to turn.
+
+### V2:
+- Visual features for the benefit of other swimmers - i.e. bright colours, arrows, and a notice on the front of the board informing others that the user is visually impaired and directing them to swim past on the user's right.
+- A front-mounted proximity sensor to warn the user of oncoming obstacles.
+
+### V3:
+- For open-water swimming, a sequence of preset GPS target locations are downloaded to the board, guiding the user around a course.
+
+### V4:
 - A button or pull cord at the base of the board can be used to trigger "Emergency" mode, which activates the emergency light and speaker, as well as texting location updates to a designated recipient/emergency services.
-- Visual features for the benefit of other swimmers - i.e. bright colours, arrows, and a notice on the front of the board informing others that the user is visually impaired and directing them to swim past on the user's right. 
+
