@@ -15,7 +15,6 @@ Mobile phones can track the user's location and provide feedback but can be diff
 The device will also include emergency features to help the swimmer receive assistance if they run into difficulties in the water.
 
 ## Future features:
-Key features:
 - For lane swimming, visual flow sensors track if the swimmer is staying in a straight line.
 - For open-water swimming, a sequence of preset GPS target locations are downloaded to the board, guiding the user around a course.
 - A front-mounted proximity sensor to warn the user of oncoming obstacles.
