@@ -7,6 +7,12 @@ View the contest entry here: https://www.hackster.io/CeruleanMars/kickboard-for-
 ## V1 (30 Nov 2023)
 Reads optical flow data from a sensor on the underside of a kickboard to determine if the user is swimming in a straight line. If the user is drifting to the left or right, audible and haptic buzzers provide feedback to direct the user back on track.
 
+The kickboard provides feedback every 5 seconds.
+
+If the user deviates to the left from a straight line, the left handle will buzz with a high note. If they deviate to the right, the right handle will buzz with a low note. The greater the deviation, the more times the handle will buzz in a row.
+
+If they swam in a straight line, both sides will buzz together once with a medium note.
+
 # What problem are you going to solve?
 Visual impairments can make swimming safely a challenge. Swimmers with limited vision want the ability to swim independently in both pool lanes and open-water settings. In swimming pools, the main issue is swimming in a straight line to avoid other swimmers. For open-water swimming, navigation is the primary concern.
 
