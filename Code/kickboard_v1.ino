@@ -66,7 +66,8 @@
 
 #define CS 10 // Using digital pin 10 for chip select
 
-#define BUZZER_PIN D9 // The Arduino pin connected to the buzzer
+#define BUZZER_PIN_L D6
+#define BUZZER_PIN_R D9 
 
 Bitcraze_PMW3901 flow(10);
 
@@ -101,30 +102,28 @@ void loop() {
     //Tell the user to turn left
     int nBuzz = 1 + int(abs(deltaX/100));
     for (int i = 0; i <= nBuzz; i++) {
-      tone(BUZZER_PIN, 33, noteDuration); //C1 = 33 (Low note)
+      tone(BUZZER_PIN_R, 33, noteDuration); //C1 = 33 (Low note)
       delay(pauseBetweenNotes);
-      noTone(BUZZER_PIN); // stop the tone playing:
+      noTone(BUZZER_PIN_R); // stop the tone playing:
     }
   }
   else if (deltaX < (0 - driftThreshold)){
     //Tell the user to turn right
     int nBuzz = 1 + int(abs(deltaX/100));
     for (int i = 0; i <= nBuzz; i++) {
-      tone(BUZZER_PIN, 4186, noteDuration); //C8 = 33 (High note)
+      tone(BUZZER_PIN_L, 4186, noteDuration); //C8 = 33 (High note)
       delay(pauseBetweenNotes);
-      noTone(BUZZER_PIN); // stop the tone playing:
+      noTone(BUZZER_PIN_L); // stop the tone playing:
     }
   }
   else {
     //Buzz both sides once
-    tone(BUZZER_PIN, 262, noteDuration); //C4 = 262 (Mid note)
+    tone(BUZZER_PIN_L, 262, noteDuration); //C4 = 262 (Mid note)
+    tone(BUZZER_PIN_R, 262, noteDuration); //C4 = 262 (Mid note)
     delay(pauseBetweenNotes);
-    noTone(BUZZER_PIN); // stop the tone playing:
+    noTone(BUZZER_PIN_L); // stop the tone playing
+    noTone(BUZZER_PIN_R); // stop the tone playing
   }
 
   delay(5000);
-}
-
-void buzzLeft(int nBuzz){
-  
 }
