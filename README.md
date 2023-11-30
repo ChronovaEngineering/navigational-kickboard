@@ -1,5 +1,6 @@
 # Kickboard for Visually Impaired Swimmers
 GitHub repository to accompany an entry to the Build2gether Inclusive Innovation Challenge: https://www.hackster.io/contests/buildtogether
+View the contest entry here: https://www.hackster.io/CeruleanMars/kickboard-for-visually-impaired-swimmers-wip-37fc69
 
 # Implemented features:
 ## V1 (30 Nov 2023)
